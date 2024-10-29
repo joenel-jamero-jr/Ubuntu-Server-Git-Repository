@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    border-right: 1px solid #ccc;
+    flex-basis: 25%;
+    padding: 20px;
+}
+
+section:last-child {
+    border-right: none;
+}
+
+section h2 {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+
+section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section li {
+    margin-bottom: 5px;
+}

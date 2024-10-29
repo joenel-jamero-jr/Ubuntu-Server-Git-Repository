@@ -1,0 +1,167 @@
+/* Define a pseudo-element for the color overlay */
+.bg:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind other content */
+    background-color: rgba(0, 83, 140, 0.3); /* Overlay color with 0.6 opacity */
+}
+
+/* Center the content vertically and horizontally */
+.bg {
+    background-image: url("pics/login_bg.jpg");
+    background-size: cover; /* Cover the entire background with the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the body fill the entire viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for the logo container */
+.logo-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/* Style for the logo */
+.logo {
+    max-width: 100px; /* Set the maximum width of the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for the login button */
+.reg-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(0, 83, 140);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reg-btn:hover {
+    background-color: gold; /* A slightly darker yellow on hover */
+    color: black;
+}
+
+/* Style for the login button */
+.canc-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.canc-btn:hover {
+    background-color: gold; /* A slightly darker yellow on hover */
+    color: black;
+}
+
+/* Style for the registration form container */
+.reg-container {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    display: flex; /* Use flexbox for layout */
+}
+
+/* Style for the upload box */
+.upload-box {
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px dashed #999;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+/* Style for the file input */
+.upload-box input[type="file"] {
+    display: none;
+}
+
+/* Style for the image preview */
+.image-preview {
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.placeholder {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevent clicking/focusing on the label */
+    color: #999; /* Placeholder color */
+    transition: all 0.3s ease;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus styles */
+input:focus {
+    border-color: #007bff;
+}
+
+/* Add styles to move placeholder up when input is focused */
+input:focus + .placeholder,
+input:not(:placeholder-shown) + .placeholder {
+    transform: translateY(-140%);
+    font-size: 12px;
+    color: #007bff;
+}
+
+.reg-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    width: 50%;
+}
+
+.registration-form {
+    display: flex;
+    justify-content: space-between; /* Space between left and right columns */
+    width: 80%; /* Adjust the width as needed */
+}
+
+.left-column {
+    width: 45%; /* Adjust the width as needed */
+}
+
+.right-column {
+    width: 45%; /* Adjust the width as needed */
+}
+
+.custom-file-upload{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid white;
+    margin-left: 30%;
+    font-style: normal;
+}

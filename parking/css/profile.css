@@ -1,0 +1,182 @@
+body {
+    background-color: #00538C;
+}
+
+/* CSS to style the navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;  
+}
+
+    .navbar h1 {
+        font-size: 14px;
+        font-weight: bold;
+        background-color: gold;
+        color: black;
+        padding: 16.5px;
+        padding: fit-content;
+    }
+
+/* Style for the logo container */
+.logo-container {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+}
+
+/* Style for the logo */
+.logo {
+    width: 50px; /* Set the maximum width of the logo */
+    height: 50px; /* Maintain aspect ratio */
+}
+
+/* Style for the login button */
+.reg-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(0, 83, 140);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reg-btn:hover {
+    background-color: gold; /* A slightly darker yellow on hover */
+    color: black;
+}
+
+/* Style for the login button */
+.canc-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.canc-btn:hover {
+    background-color: gold; /* A slightly darker yellow on hover */
+    color: black;
+}
+
+/* Style for the registration form container */
+.reg-container {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.9;
+    width: 50%;
+    margin: 5% auto; /* Center the container horizontally and provide top margin */
+}
+
+
+/* Style for the upload box */
+.upload-box {
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px dashed #999;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+/* Style for the file input */
+.upload-box input[type="file"] {
+    display: none;
+}
+
+.image-preview {
+    width: 200px; /* Set the width to match the upload box */
+    height: 200px; /* Set the height to match the upload box */
+    overflow: hidden; /* Hide any overflow beyond the dimensions */
+    margin-top: 20px; /* Adjust the margin as needed */
+    margin-left: 30px; /* Adjust the margin as needed */
+}
+
+.image-preview img {
+    width: 100%; /* Make the image fill the container horizontally */
+    height: 100%; /* Maintain aspect ratio */
+}
+
+
+.placeholder {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevent clicking/focusing on the label */
+    color: #999; /* Placeholder color */
+    transition: all 0.3s ease;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus styles */
+input:focus {
+    border-color: #007bff;
+}
+
+/* Add styles to move placeholder up when input is focused */
+input:focus + .placeholder,
+input:not(:placeholder-shown) + .placeholder {
+    transform: translateY(-140%);
+    font-size: 12px;
+    color: #007bff;
+}
+
+.reg-container {
+    display: flex;
+    flex-direction: column;
+    opacity: 0.9;
+    width: 50%;
+    margin-top: 5%;
+    align-items: center;
+}
+
+.registration-form {
+    display: flex;
+    width: 80%; /* Adjust the width as needed */
+}
+
+.left-column {
+    width: 50%; /* Adjust the width as needed */
+}
+
+.right-column {
+    width: 50%; /* Adjust the width as needed */
+    margin-left: 80px;
+}
+
+label{
+    color: white;
+}
+

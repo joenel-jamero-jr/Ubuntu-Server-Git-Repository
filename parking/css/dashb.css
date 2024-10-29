@@ -1,0 +1,248 @@
+/* Style for the Back button */
+.back-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: gold;
+    color: black;
+}
+
+/* Style for the logo */
+.logo {
+    width: 50px; /* Set the maximum width of the logo */
+    height: 50px; /* Maintain aspect ratio */
+}
+
+/* Style for the Nav bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255, 0.5);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 17px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.5s, color 0.5s; /* Add a smooth transition effect */
+  }
+
+  .active {
+    background-color: gold;
+    color: black;
+    text-decoration: underline;
+  }
+
+  li a:hover {
+    background-color: gold;
+    color: black;
+  }
+
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind other content */
+    background-color: rgba(0, 83, 140,0.3); /* Overlay color with 0.5 opacity */
+}
+
+body {
+    background-image: url("pics/login_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    position: relative; /* Add relative position to the body */
+}
+
+.margin{
+    margin: 0 10px;
+}
+
+/* Style for the container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+table {
+    margin-top: 0; /* Push the table to the left */
+    margin-bottom: auto; /* Reset the default margin */
+    border: 1px solid white;
+    border-collapse: collapse;
+    width: 100%;
+}
+th{
+    color: white;
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: black;
+}
+
+/* Style for table cells (boxes) */
+td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid white;
+    border-collapse: collapse;
+    color: white;
+    background-color: blue;
+    width: 80px; /* Set a constant width for the td elements */
+}
+
+/* Style for the table container */
+.table-container {
+    display: flex;
+    flex-direction: column-reverse; /* Reverse the order of children */
+    max-height: 400px; /* Set a maximum height for the table container */
+    overflow-y: auto; /* Add a vertical scrollbar when needed */
+    background-color: transparent;
+}
+
+/* Style for the "Out" button */
+.edit-button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 1px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+    font-size: 30px;
+}
+
+/* Style for the "Out" button on hover */
+.edit-button:hover {
+    background-color: gold;
+    color: black;
+}
+
+/* Style for the "Out" button */
+.out-button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 1px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+    font-size: 30px;
+}
+
+/* Style for the "Out" button on hover */
+.out-button:hover {
+    background-color: gold;
+    color: black;
+}
+
+/* Style for h2 elements */
+h2 {
+    background-color: black;
+    color: white;
+    padding: 10px; /* Add padding for spacing */
+    width: 400px;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.vehicle-box-occupied{
+    width: 100px;
+    height: 340px;
+    background-color: #0000CD;
+    margin: 5px;
+    float: left; /* Display boxes side by side */
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 5px; /* Add padding for better spacing */
+    font-size: 100%; /* Adjust the font size as needed */
+    line-height: 1; /* Adjust the line height for better spacing */
+}
+
+.vehicle-box-empty{
+    width: 100px;
+    height: 340px;
+    background-color: #DC143C;
+    margin: 5px;
+    float: left; /* Display boxes side by side */
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 5px; /* Add padding for better spacing */
+    font-size: 100%; /* Adjust the font size as needed */
+    line-height: 1; /* Adjust the line height for better spacing */
+    align-items: center; /* Center items horizontally */
+    display: flex; /* Use flexbox */
+}
+
+/* Style for buttons */
+.park-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.park-button:hover {
+    background-color: gold;
+    color: black;
+}
+
+.profile-pic {
+    /* Adjust the width and height of the profile picture */
+    width: 50px; /* Change this value to adjust the width */
+    height: 50px; /* Change this value to adjust the height */
+    border-radius: 50%; /* Make the picture circular */
+    cursor: pointer;
+}
+
+/* CSS for logout dropdown */
+.logout-dropdown {
+    display: none;
+    position: absolute;
+    width: 75px; /* Adjust the width of the dropdown as needed */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0; /* Align the dropdown to the right side */
+    margin-top: 0px; /* Adjust the distance from the top as needed */
+    border: black 1px;
+}
+
+.logout-dropdown li {
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the dropdown when hovering over the profile picture */
+.show {
+    display: block;
+}
+
+

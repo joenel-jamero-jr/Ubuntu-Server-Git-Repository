@@ -1,0 +1,371 @@
+/* Define a pseudo-element for the background image */
+.bg:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind other content */
+    background-color: rgba(0, 83, 140, 0.5); /* Overlay color with 0.6 opacity */
+}
+
+/* Center the content vertically and horizontally */
+.bg {
+    background-image: url("pics/login_bg.jpg");
+    background-size: cover; /* Cover the entire background with the image */
+    height: 100vh; /* Make the body fill the entire viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for the logo container */
+.logo-container {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+}
+
+.h-w{
+    color: black;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    font-size: 35px;
+}
+
+/* Style for the logo */
+.logo {
+    max-width: 50px; /* Set the maximum width of the logo */
+    height: 50px; /* Maintain aspect ratio */
+}
+
+/* Style for the Back button */
+.back-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: gold;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255, 0.5);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 17px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.5s, color 0.5s; /* Add a smooth transition effect */
+  }
+
+  .active {
+    background-color: gold;
+    color: black;
+  }
+
+  li a:hover {
+    background-color: gold;
+    color: black;
+  }
+
+  .active {
+    background-color: gold;
+    color: black;
+    text-decoration: underline;
+  }
+
+  li a:hover {
+    background-color: gold;
+    color: black;
+  }
+
+  /* Style for the logo */
+.logo {
+    width: 50px; /* Set the maximum width of the logo */
+    height: 50px; /* Maintain aspect ratio */
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+}
+
+/* Style for the table */
+table {
+    border-collapse: collapse;
+    width: 90%; /* Adjust the table width as needed */
+    margin: 0 auto;
+}
+
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    background-color: white; /* Set the background color to white */
+}
+
+th {
+    background-color: gold;
+    color: black;
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Add this to set the background color of even rows to white */
+tr:nth-child(even) {
+    background-color: white;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0%; /* Adjust the top margin as needed */
+}
+
+
+/* Style for the search container */
+.search-container {
+    text-align: left; /* Center the search input horizontally */
+    margin-bottom: 10px; /* Add some space between the search bar and the table */
+    margin-left: 5%;
+}
+
+/* Style for the search input */
+#search {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 500px; /* Adjust the width as needed */
+}
+
+/* Style for the sort by dropdown */
+#sort-by {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 200px; /* Adjust the width as needed */
+    margin-right: 5%;
+}
+/* Style for the sort by dropdown */
+#date-filter {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 200px; /* Adjust the width as needed */
+    margin-right: 10px;
+}
+
+/* Style for the Generate Report button */
+.generate-report-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    right: 5%; /* Adjust the distance from the right */
+    cursor: pointer;
+}
+
+.generate-report-button:hover {
+    background-color: gold; /* Change color on hover if needed */
+    color: black;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.pagination a {
+    padding: 8px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: black;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+/* Add this CSS for the search button */
+.search-button {
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: gold;
+    color: black;
+}
+
+.clear-button{
+    background-color: crimson;
+    color: white;
+    border: 1px solid black;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.clear-button:hover{
+    background-color: gold;
+    color: black;
+}
+
+.profile-pic {
+    /* Adjust the width and height of the profile picture */
+    width: 50px; /* Change this value to adjust the width */
+    height: 50px; /* Change this value to adjust the height */
+    border-radius: 50%; /* Make the picture circular */
+    cursor: pointer;
+}
+
+/* CSS for logout dropdown */
+.logout-dropdown {
+    display: none;
+    position: absolute;
+    width: 75px; /* Adjust the width of the dropdown as needed */
+    box-shadow: 0px 8px 16px 0px rgba(255,255,255,0.5);
+    right: 0; /* Align the dropdown to the right side */
+    margin-top: 0px; /* Adjust the distance from the top as needed */
+}
+
+.logout-dropdown li {
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the dropdown when hovering over the profile picture */
+.show {
+    display: block;
+}
+
+/* Style for the "Out" button */
+.out-button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 7px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+    font-size: 30px;
+}
+
+/* Style for the "Out" button on hover */
+.out-button:hover {
+    background-color: gold;
+    color: black;
+}
+
+/* Style for the "Out" button */
+.more-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 2px 15px;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+    font-size: 30px;
+}
+
+/* Style for the "Out" button on hover */
+.more-button:hover {
+    background-color: gold;
+    color: black;
+}
+
+/* Style for the "Out" button */
+.edit-button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 0px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+    font-size: 30px;
+}
+
+/* Style for the "Out" button on hover */
+.edit-button:hover {
+    background-color: gold;
+    color: black;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black; /* Change background color to black */
+    padding: 20px;
+    border-radius: 15px;
+    z-index: 9999;
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+
+p{
+    font-size: 15px; /* Adjust the font size as needed */
+    text-align: left;
+    background-color: gold;
+    border-radius: 10px;
+    padding: 13px;
+    color: black;
+}
+
+.close-pop{
+    background-color: blue;
+    color: white;
+    padding: 8px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.close-pop:hover{
+    background-color: crimson;
+    color: black;
+    cursor: pointer;
+}
+

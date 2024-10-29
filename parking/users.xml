@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user>
+        <firstname>Scott</firstname>
+        <lastname>Paurom</lastname>
+        <contact_number>09251032568</contact_number>
+        <username>admin</username>
+        <password>admin</password>
+    </user>
+</users>

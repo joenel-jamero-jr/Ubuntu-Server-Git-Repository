@@ -1,0 +1,156 @@
+/* Style for the container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+table {
+    margin-top: 0; /* Push the table to the left */
+    margin-bottom: auto; /* Reset the default margin */
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Style for table cells (boxes) */
+td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse; 
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: crimson;
+    width: 80px; /* Set a constant width for the td elements */
+}
+tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* Style for buttons */
+.park-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.park-button:hover {
+    background-color: gold;
+    color: black;
+
+}
+
+body {
+    background-image: url("pics/bpp.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.margin{
+    margin: 0 10px;
+}
+
+/* CSS to hide table headers */
+.hide-header {
+    display: none;
+}
+
+/* Style for the Back button */
+.back-button {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: gold;
+    color: black;
+}
+
+/* CSS to style the navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .navbar h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+    }
+
+/* Style for h2 elements */
+h2 {
+    background-color: black;
+    color: white;
+    padding: 10px; /* Add padding for spacing */
+    width: 400px;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.vehicle-box {
+    width: 100px;
+    height: 200px;
+    background-color: #DC143C;
+    margin: 5px;
+    display: inline-block;
+    text-align: center;
+    line-height: 170px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif; /* Set font family to Arial */
+}
+
+.vehicle-box-right {
+    width: 100px;
+    height: 200px;
+    background-color: #DC143C;
+    margin: 5px;
+    display: inline-block;
+    text-align: center;
+    line-height: 170px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif; /* Set font family to Arial */
+}
+
+/* New styling to align boxes to the right */
+.right-container {
+    text-align: right;
+}
+
+.button-adjust {
+    position: relative;
+    left: 20%; /* Adjust the left position as needed */
+}
+
+.button-adjust-right {
+    position: relative;
+    right: 50%; /* Adjust the left position as needed */
+}
